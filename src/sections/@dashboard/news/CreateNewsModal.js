@@ -6,8 +6,8 @@ import { Alert } from '@mui/material';
 import Page from '../../../enums/page';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import { imageAPI } from './../../api/ConfigAPI';
-import { setErrorValue } from './../../redux/slices/ErrorSlice';
+import { imageAPI } from '../../../api/ConfigAPI';
+import { setErrorValue } from '../../../redux/slices/ErrorSlice';
 import axios from 'axios';
 import Loading from '../../../components/loading/Loading';
 

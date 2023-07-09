@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 // utils
 // components
 import Label from '../../../components/label';
-import ActionDropdown from './../../components/Dropdown/ActionDropdown';
+import ActionDropdown from '../../../components/Dropdown/ActionDropdown';
 
 // ----------------------------------------------------------------------
 
