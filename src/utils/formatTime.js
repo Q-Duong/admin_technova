@@ -1,0 +1,32 @@
+import { format, getTime, formatDistanceToNow } from 'date-fns';
+import viLocale from "date-fns/locale/vi";
+
+
+// ----------------------------------------------------------------------
+
+export function fDate(date, newFormat) {
+  const fm = newFormat || 'dd-MM-yyyy';
+
+  return date ? format(new Date(date), fm) : '';
+}
+
+export function fDateTime(date, newFormat) {
+  const fm = newFormat || 'dd-MM-yyyy p';
+
+  return date ? format(new Date(date), fm) : '';
+}
+
+export function fTimestamp(date) {
+  return date ? getTime(new Date(date)) : '';
+}
+
+export function fToNow(date) {
+  return date
+    ? formatDistanceToNow(new Date(date), {
+        addSuffix: true,
+        locale: {
+          ...viLocale,
+      }
+      })
+    : '';
+}
