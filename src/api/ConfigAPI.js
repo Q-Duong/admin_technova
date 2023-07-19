@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axi = axios.create({
-  baseURL: `https://api.technova.com.vn`,
+  baseURL: `https://api.technova.com.vn:3000`,
 });
 
 const authAPI = {
