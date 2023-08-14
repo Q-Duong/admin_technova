@@ -188,7 +188,7 @@ export default function ProductsPage() {
     <SearchBar
           filterName={searchTerm}
           onFilterName={
-            (e) => {setSearchTerm(e.target.value)}
+            (e) => { if(e.target.value !== searchTerm) setSearchTerm(e.target.value)}
           }
         />
       <Scrollbar>
