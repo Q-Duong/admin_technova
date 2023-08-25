@@ -158,7 +158,7 @@ function CreateProductModal(props) {
                         <Form.Label>Bật thanh toán online</Form.Label>
                         <Form.Select onChange={(e) => {setIsContactToSell(e.target.value)}}>
                             <option  value={true}>Bật</option>
-                            <option  value={false}>Tắt</option>
+                            <option selected value={false}>Tắt</option>
                         </Form.Select>
                     </Form.Group>
 
