@@ -35,7 +35,6 @@ function FilterOrderModal(props) {
         endDate,
         email
       }
-      console.log(filterOrder)
       onSubmit(filterOrder);
     }
   }

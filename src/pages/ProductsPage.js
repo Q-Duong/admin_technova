@@ -139,9 +139,7 @@ export default function ProductsPage() {
       data['id'] = clickedElement.id
       const resData = await productAPI.update(data, token)
       const filterProducts = products.filter((r) => r.id !== resData.data.id)
-      console.log(resData.data)
       const result = {...resData.data, isContactToSell: resData.data.isContactToSell == 'true' ? true : false} ;
-      console.log(111,resData.data)
       const newProducts = [resData.data, ...filterProducts]
       setProducts(newProducts)
     }

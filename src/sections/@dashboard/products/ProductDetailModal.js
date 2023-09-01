@@ -61,7 +61,6 @@ function ProductDetailModal(props) {
     }
 
     function handleShowDeleteBenefitForm(selectedItem) {
-      console.log(selectedItem)
       setShowDeleteBenefitForm(true);
       setSelectedBenefit(selectedItem)
     }

@@ -59,7 +59,6 @@ function CreateOrderDetailModal(props) {
                 setProducts(res.data.data);
                 setSelectedProduct(res.data.data[0])
             } catch (error) {
-                console.log(error)
             }
         }
         getProducts()
@@ -76,7 +75,6 @@ function CreateOrderDetailModal(props) {
               setProductName(`${selectedProduct.name} - ${res.data[0].name}`)
               setPrice(res.data[0].price)
           } catch (error) {
-              console.log(error)
           }
       }
       if(selectedProduct)

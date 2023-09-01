@@ -148,7 +148,6 @@ function CreateProductModal(props) {
                             data={description}
                             onChange={ ( event, editor ) => {
                                 const data = editor.getData();
-                                console.log( { event, editor, data } );
                                 setDescription(data);
                             } }
                         />

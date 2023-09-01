@@ -134,7 +134,6 @@ function UpdateTechnovaServiceModal(props) {
                   data={content}
                   onChange={ ( event, editor ) => {
                       const data = editor.getData();
-                      console.log( { event, editor, data } );
                       setContent(data);
                   } }
               />
